@@ -1,0 +1,169 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'arial', cursive;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: rgb(255, 238, 139);
+    position: fixed;
+  
+}
+
+.brand{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: crimson;
+}
+
+.menu{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid coral; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-item{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+}
+
+.menu-item a{
+    font-style: none;
+    text-decoration: none;
+    color: crimson;
+}
+
+.menu-item:hover{
+    background-color: rgb(102, 180, 29);
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.col1, .col2{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+}
+
+.col1{
+    background-image: url(https://images.pexels.com/photos/1126372/pexels-photo-1126372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: right;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mainText{
+    color: white;
+    font-size: 8rem;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.418);
+}
+
+.loginForm, .info{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid cyan; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.loginForm{
+    justify-content: space-evenly;
+}
+
+.loginForm-input{
+    height: 30px;
+    padding: 0px 10px;
+}
+
+.loginForm-btn{
+    height: 40px;
+    background-color: rgb(102, 180, 29);
+    color: white;
+    font-size: 1rem;
+}
+
+.info{
+    background-color: rgb(255, 238, 139);
+    /* color: rgb(102, 180, 29); */
+}
+
+.fa{
+    margin: 0px 10px;
+}
+
+.socmed a{
+    font-style: none;
+    text-decoration: none;
+    color:black;
+}
+
+/* CONTAINER ABOUT */
+
+.about{
+    background-color: forestgreen;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery{
+    background-color: greenyellow;
+    color: orange;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    background-color: coral;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+

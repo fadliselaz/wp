@@ -1,0 +1,29 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.col{
+    width: 25%;
+    height: 100%;
+}
+
+.warna1{
+    background-color: red;
+}
+.warna2{
+    background-color: yellow;
+}
+.warna3{
+    background-color: greenyellow;
+}
+.warna4{
+    background-color: cyan;
+}
