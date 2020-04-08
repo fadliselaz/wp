@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    width: 100vw;
+    height: 12vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.brand{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.brand:hover~.menu{
+    display: flex;
+}
+
+.menu{
+    width: 100%;
+    height: 50%;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+.menu-item{
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: .8rem;
+}
+
+.home{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/52576/pexels-photo-52576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainText{
+    width: 100vw;
+    height: auto;
+    font-size: 7rem;
+    color: orange;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+
+}
+
+.info{
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-title{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.info-content{
+    text-align: justify;
+}
+
+.formLogin{
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.formLogin-title{
+    margin: 0px;
+    text-align: center;
+}
+
+label{
+    margin: 8px 0px;
+}
+
+.username, .password{
+    height: 30px;
+    text-align: center;
+}
+
+.btn{
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+.about{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content1{
+    width: 100vw;
+    height: 50vh;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img1{
+    width: 90%;
+    height: 50%;
+    background-image: url(https://images.pexels.com/photos/1509582/pexels-photo-1509582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    margin-top: 18px;
+}
+
+.content-text1, .content-text2{
+    width: 90%;
+    text-align: justify;
+    margin-top: 18px;
+}
+
+.about-content2{
+    width: 100vw;
+    height: 50vh;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img2{
+    width: 90%;
+    height: 50%;
+    background-image: url(https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    margin-top: 18px;
+
+}
+
+.gallery{
+    width: 100vw;
+    height: 100vh;
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkorchid;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

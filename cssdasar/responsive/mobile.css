@@ -1,0 +1,267 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: ghostwhite;
+    position: fixed;
+    top: 0;
+}
+
+.brand{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+
+}
+
+.menu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.menu-item{
+    width: calc(100% / 4);
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+    font-size: .6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/808865/pexels-photo-808865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+}
+
+.heroText{
+    font-family: 'Bebas Neue';
+    width: 90%;
+    color: orange;
+    font-size: 8rem;
+    word-wrap: break-word;
+}
+
+.info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-content{
+    text-align: justify;
+}
+
+.formRegister{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    color: ghostwhite;
+}
+
+.formRegister label{
+    margin: 10px 0px;
+
+}
+
+.formRegister input{
+    height: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.btn{
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.checkBoxArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkboxText{
+    font-size: .8rem;
+}
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content1-img{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.content2-img{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/3768126/pexels-photo-3768126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.content1-title, .content2-title{
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.content1-text, .content2-text{
+    width: 100%;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.contentLink{
+    font-size: .8rem;
+}
+
+
+.gallery{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.gallery-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.gallery-item{
+    width: 100vw;
+    height: calc(100vh / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gly-item1{
+    background-image: url(https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+}
+
+.gly-item2{
+    background-image: url(https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+}
+
+.gly-item3{
+    background-image: url(https://images.pexels.com/photos/7075/people-office-group-team.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.gallery-item-footer{
+    width: 100%;
+    height: 12%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.gly-footer-title{
+    font-size: .8rem;
+}
+
+.fa{
+    margin-left: auto;
+    color: orange;
+}
+
+
+
+
+
+.contact{
+    background-color: violet;
+    color: royalblue;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="smallscreen.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+</head>
+
+<body onscroll="scr()">
+
+
+    <div class="menu-colapse">
+        <div class="menu-colapse-item">HOME</div>
+        <div class="menu-colapse-item">ABOUT</div>
+        <div class="menu-colapse-item">CONTACT</div>
+        <div class="menu-colapse-item">GALLERY</div>
+    </div>
+
+    <div class="navbar">
+        <div class="brand">JVALLEY</div>
+        <span class="fa" value="hide" onclick="show()">&#8651;</span>
+        <div class="menu">
+            <div class="menu-item">HOME</div>
+            <div class="menu-item">ABOUT</div>
+            <div class="menu-item">GALLERY</div>
+            <div class="menu-item">CONTACT</div>
+        </div>
+    </div>
+
+
+    <div class="container home">
+        <div class="col1">
+            <div class="mainText">
+                FREEDOM EDUCATION
+            </div>
+        </div>
+
+        <div class="col2">
+            <div class="row1">
+                <h3 class="row1-title">
+                    Wellcome to Educations Paradise..
+                </h3>
+                <p class="content-row1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sed in omnis, sapiente magnam iusto
+                    accusamus ad pariatur modi voluptates praesentium numquam? Dolor veritatis animi dolorem
+                    consectetur, repudiandae quibusdam totam?
+                </p>
+            </div>
+            <div class="row2">
+                <div class="formInput">
+                    <label for="name">name</label>
+                    <input type="text" class="name" id="name">
+
+                    <label for="email">email</label>
+                    <input type="email" class="email" id="email">
+
+                    <label for="phone">phone</label>
+                    <input type="phone" class="phone" id="phone">
+
+                    <label for="age">age</label>
+                    <input type="number" class="age" id="age">
+                </div>
+
+                <button class="btn">
+                    <span class="btn-text">REGISTER</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const show = function () {
+
+            const fa = document.querySelector(".fa")
+            const status = fa.getAttribute('value')
+            const menuColapse = document.querySelector('.menu-colapse')
+
+            if (status == 'hide') {
+                menuColapse.style.transform = 'translateY(0)'
+                fa.setAttribute('value', 'show')
+                fa.style.color = 'orange'
+            } else {
+                menuColapse.style.transform = 'translateY(-24vh)'
+                fa.setAttribute('value', 'hide')
+                fa.style.color = 'white'
+
+            }
+        }
+
+        const scr = function () {
+            const fa = document.querySelector(".fa")
+            const status = fa.getAttribute('value')
+            const menuColapse = document.querySelector('.menu-colapse')
+
+            menuColapse.style.transform = 'translateY(-24vh)'
+            fa.setAttribute('value', 'hide')
+            fa.style.color = 'white'
+        }
+
+
+    </script>
+
+</body>
+
+</html>
