@@ -92,6 +92,7 @@ a{
 
 .info-content{
     text-align: justify;
+    font-size: .8rem;
 }
 
 .formRegister{
@@ -137,14 +138,6 @@ a{
 
 .checkboxText{
     font-size: .8rem;
-}
-
-.contact{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .about{
@@ -257,11 +250,98 @@ a{
 }
 
 
-
-
-
 .contact{
-    background-color: violet;
-    color: royalblue;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}   
+
+.gmaps{
+    width: 100%;
+    height: 300px;
 }
 
+.address{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.address-title{
+    font-size: 1rem;
+}
+
+.address-content{
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.formMessage{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.fm-title{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fm-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.fm-form input{
+    height: 30px;
+    outline: none;
+    border: .5px solid gray;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.fm-form label{
+    margin-bottom: 5px;
+}
+
+.fm-form textarea{
+    outline: none;
+    border: .5px solid gray;
+}
+
+.fm-btn{
+    width: 100%;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 10px;
+}
+
+.socmed{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.socmed span{
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    color: white;
+}
