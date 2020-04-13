@@ -1,0 +1,79 @@
+
+:root{
+
+    /* UKURAN FONT  */
+    --text-hero : 2.5rem;
+    --text-title : 1.6rem;
+    --text-content : 1rem;
+    --text-footer : .8rem;
+
+    /* FONT FAMILY */
+    --font-display : 'Abril Fatface', cursive;
+    --font-title : 'Montserrat', sans-serif;
+    --font-content : 'Roboto Slab', serif;
+
+    /* COLOR THEMES */
+    --primary-color : #FF7040;
+    --secondary-color : #16CC9C;
+    --bg-color : #D9D3BD;
+    --text-color : #363334;
+    --shadow-color : rgba(99, 99, 99, 0.600);
+
+    /* IMAGE BANK */
+    --image-background-1 : url(https://images.pexels.com/photos/714525/pexels-photo-714525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+
+    --image-background-2 : url(https://images.pexels.com/photos/365638/pexels-photo-365638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+
+    --image-background-3 : url(https://images.pexels.com/photos/1040161/pexels-photo-1040161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+    background-color: ghostwhite;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainImage{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-hero);
+    color: var(--bg-color);
+    background-image: var(--image-background-1);
+    background-size: cover;
+    font-family: var(--font-display);
+    text-shadow: 2px 2px 3px var(--shadow-color);
+}
+
+.title{
+    font-size: var(--text-title);
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    margin: 8px 18px 0px 18px;
+}
+
+.content{
+    font-size: var(--text-content);
+    font-family: var(--font-content);
+    color: var(--text-color);
+    padding: 0px 18px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+
+
+
