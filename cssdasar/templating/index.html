@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bootsrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#home">
+            <i class="material-icons">explore</i> &nbsp;Jvalley
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="material-icons">
+                linear_scale
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item dropdown bg-dark">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Register
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <form method="get" action="" class="">
+                            <div class="text-light text-small text-center">Register</div>
+                            <hr class="bg-light">
+
+                            <div class="form-group ">
+                                <label for="username" class="text-light">Username</label>
+                                <input id="username" class="form-control" type="text" autocomplete="off" required>
+                            </div>
+                            <div class="form-group ">
+                                <label for="email" class="text-light">Email</label>
+                                <input id="email" class="form-control" type="text" autocomplete="off" required>
+                            </div>
+                            <div class="form-group ">
+                                <label for="password" class="text-light">password</label>
+                                <div class="container-fluid d-flex p-0">
+                                    <span class="material-icons " style="position: absolute; right: 10%;"
+                                        onclick="showPass()">
+                                        <p style="margin: 0px;" class="text-dark eye">visibility</p>
+                                    </span>
+                                    <input id="password" class="form-control w-100 pass" type="password"
+                                        autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <button class="btn btn-primary">register</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container container-lg home" id="home">
+        <div class="home-kiri"></div>
+        <div class="home-kanan"></div>
+    </div>
+
+    <div class="container about" id="about">
+        <h3>about</h3>
+    </div>
+
+    <div class="container gallery" id="gallery">
+        <h3>gallery</h3>
+    </div>
+
+    <div class="container contact" id="contact">
+        <h3>contact</h3>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // window.addEventListener('scroll', () => {
+
+        //     async function show() {
+        //         const navbar = document.querySelector('.collapse')
+        //         navbar.classList.remove('show')
+
+        //     }
+
+        //     show()
+
+        // })
+
+        const showPass = () => {
+            const pass = document.querySelector('.pass')
+            pass.getAttribute('type') == 'password' ? pass.setAttribute('type', 'text') : pass.setAttribute('type', 'password')
+
+            const eye = document.querySelector('.eye')
+            if (eye.textContent == 'visibility') {
+                eye.innerHTML = 'visibility_off'
+            } else {
+                eye.innerHTML = 'visibility'
+
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>

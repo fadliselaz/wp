@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    color: whitesmoke;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    color: whitesmoke;
+}
+
+
