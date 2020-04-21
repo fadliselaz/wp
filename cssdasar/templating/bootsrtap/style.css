@@ -1,0 +1,17 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: whitesmoke;
+}

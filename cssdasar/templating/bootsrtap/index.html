@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-danger" style="
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-blend-mode: multiply;
+    ">
+
+        <h3 class="text-light">Selamat Datang</h3>
+
+        <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#registerForm">NEXT</button>
+
+        <div id="registerForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <form method="get" action="home.html" style="padding: 20px; box-sizing: border-box;">
+
+                        <div class="form-group">
+                            <label for="name">insert your name</label>
+                            <input id="name" class="form-control" type="text" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">insert your email</label>
+                            <input id="email" class="form-control" type="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">insert your phone number</label>
+                            <input id="phone" class="form-control" type="phone" required>
+                        </div>
+
+                        <button class="btn btn-danger w-100" type="submit">Register</button>
+
+                        <div class="form-group"
+                            style="margin-top: 10px; display: flex; justify-content: start; width: 100%; align-items: center; padding: 0px;">
+                            <input id="agree" type="checkbox" name="" style="margin: 0px;" required>
+                            <label for="agree" style="margin: 0px; padding: 0px;">
+                                &nbsp;I Agree with term and condition
+                            </label>
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
