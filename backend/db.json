@@ -1,0 +1,44 @@
+{
+  "userdatas": [
+    {
+      "username": "fadliselaz",
+      "email": "michael@gmail.com",
+      "password": "terserah",
+      "phone": "081213655573",
+      "hobi": "men musik",
+      "id": 1
+    },
+    {
+      "username": "evalia",
+      "email": "evalia@gmail.com",
+      "password": "secret",
+      "phone": "081213655573",
+      "hobi": "masak",
+      "id": 2
+    },
+    {
+      "username": "alif",
+      "email": "alif@gmail.com",
+      "password": "secret",
+      "phone": "081213655573",
+      "hobi": "masak",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "author": "munaroh",
+      "comment": "mandra bos..",
+      "rating": 5,
+      "like": true,
+      "id": 1
+    },
+    {
+      "author": "dedi",
+      "comment": "manrap bos..",
+      "rating": 5,
+      "like": true,
+      "id": 2
+    }
+  ]
+}
