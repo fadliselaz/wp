@@ -2,27 +2,10 @@
   "userdatas": [
     {
       "username": "fadliselaz",
-      "email": "michael@gmail.com",
-      "password": "terserah",
-      "phone": "081213655573",
-      "hobi": "men musik",
+      "password": "131313",
+      "phone": "sadfsadf",
+      "email": "jvalley@gmail.com",
       "id": 1
-    },
-    {
-      "username": "evalia",
-      "email": "evalia@gmail.com",
-      "password": "secret",
-      "phone": "081213655573",
-      "hobi": "masak",
-      "id": 2
-    },
-    {
-      "username": "alif",
-      "email": "alif@gmail.com",
-      "password": "secret",
-      "phone": "081213655573",
-      "hobi": "masak",
-      "id": 3
     }
   ],
   "comments": [
@@ -39,6 +22,15 @@
       "rating": 5,
       "like": true,
       "id": 2
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "author": "boys",
+      "title": "my tutorial",
+      "note": "kali ni adalah tutorial yang epic",
+      "date": "\n    6:3:2020 / \n    21:46:37 WIB\n    "
     }
   ]
 }

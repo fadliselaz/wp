@@ -1,0 +1,27 @@
+{
+    "note" : [
+
+        {
+            "id" : 1,
+            "username" : "fadliselaz",
+            "title" : "tutorial 1",
+            "content" : "Ini adalah tutorial 1",
+            "date" : "13 Juli 2020"
+        },
+        {
+            "id" : 2,
+            "username" : "evalia",
+            "title" : "tutorial 2",
+            "content" : "Ini adalah tutorial 2",
+            "date" : "13 Juli 2020"
+        },
+        {
+            "id" : 3,
+            "username" : "dedi",
+            "title" : "tutorial 3",
+            "content" : "Ini adalah tutorial 3",
+            "date" : "13 Juli 2020"
+        }
+
+    ]
+}

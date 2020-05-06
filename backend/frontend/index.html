@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+
+<body style="background-color: tomato; overflow-x: hidden; padding: 0px; margin: 0px;">
+
+
+    <div class="container" id="con" style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    ">
+
+    </div>
+
+    <form action="notepad.html" style="
+    display: flex; 
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.300);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: ghostwhite;
+    " onSubmit="tambahData()" id="formInput">
+
+        <input type="text" id="username" placeholder="masukan username" required>
+        <input type="email" id="email" placeholder="masukan email" required>
+        <input type="password" id="password" placeholder="masukan password" required>
+        <input type="phone" id="phone" placeholder="masukan phone" required>
+
+        <button type="submit"> Masukan data</button>
+
+    </form>
+
+    <script>
+
+        const db = fetch('http://localhost:3000/userdatas', {
+            mode: 'cors',
+            method: 'GET',
+        })
+
+        db
+            .then(res => res.json())
+            .then(data => {
+                var con = document.getElementById('con')
+                data.map((e) => {
+                    con.innerHTML += `
+                <div class="card" style="
+                    width: auto;
+                    max-width: 300px;
+                    height: auto;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.300);
+                    margin : 10px;
+                    background-color: ghostwhite;
+
+                ">
+                    <span onclick="deleteData(${e.id})">x</span>
+
+                    <p>username : ${e.username}</p>
+                    <hr style="border: .2px solid gray;">
+                    <p>email : ${e.email}</p>
+                    <hr style="border: .2px solid gray;">
+                    <p>phone : ${e.phone}</p>
+                    <hr style="border: .2px solid gray;">
+
+                </div>
+
+                    `
+                })
+            })
+
+
+        const tambahData = () => {
+            const us = document.getElementById('username').value
+            const em = document.getElementById('email').value
+            const ps = document.getElementById('password').value
+            const ph = document.getElementById('phone').value
+
+            fetch('http://localhost:3000/userdatas', {
+                mode: 'cors',
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    username: us,
+                    password: ps,
+                    phone: ph,
+                    email: em,
+                    id: null
+                })
+
+            })
+                .then(res => res.json())
+                .then(data => { console.log(data) })
+
+            clr()
+
+        }
+
+        const clr = () => {
+            const us = document.getElementById('username')
+            const em = document.getElementById('email')
+            const ps = document.getElementById('password')
+            const ph = document.getElementById('phone')
+
+            us.removeAttribute('value')
+        }
+
+
+        const deleteData = async (id) => {
+            const yakin = confirm('yaqin delete..?')
+            if (yakin) {
+                fetch(`http://localhost:3000/userdatas/${id}`, {
+                    mode: 'cors',
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .catch(err => console.log(err))
+            }
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

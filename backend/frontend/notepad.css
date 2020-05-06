@@ -1,0 +1,78 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.closeButton:hover{
+    color: red;
+}
+
+.editButton:hover{
+    color: yellowgreen;
+}
+
+.modal-dialog{
+    width: 30%;
+}
+
+.navbar{
+    padding: 0px 80px;
+    box-sizing: border-box;
+}
+
+.search{
+    height: 80%;
+    margin-top: 2%;
+}
+
+.card{
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.200) !important;
+    margin: 20px 20px;
+    height: auto;
+    /* max-height: 300; */
+    transition-duration: .5s;
+}
+
+.card:hover{
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.200) !important;
+}
+
+.card-title{
+    font-size: 1.2rem;
+}
+
+.card-text{
+    font-size: .8rem;
+}
+
+.card-body{
+    margin-top: 20px;
+}
+
+
+.notesArea{
+    margin-top: 10vh;
+    width: 100vw;
+    height: auto;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.modalTriger{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4rem;
+}
+
+.editForm{
+    display: none;
+    position: absolute;
+}
