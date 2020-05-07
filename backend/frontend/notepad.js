@@ -4,7 +4,7 @@ const card = (title, content, id, dt, author)=>{
 
     const crd = `
     
-    <div class="card col-lg-3 " style="position: relative;" id=${id}>
+    <div class="card col-lg-3 " style="position: relative;" id="card-${id}" value={true}>
 
         <span class="material-icons medium closeButton"
             style="position: absolute; right: 5px; top: 5px;" onclick="deleteNote(${id})">delete_forever
@@ -12,6 +12,10 @@ const card = (title, content, id, dt, author)=>{
 
         <span class="material-icons medium editButton"
             style="position: absolute; right: 30px; top: 5px;" onclick="showTogle(${id})">edit
+        </span>
+
+        <span class="small greenButton btn btn-success btn-sm"
+            style="position: absolute; top: 5px; left: 5px; width: 15px; height: 15px; border-radius:20px;" onclick="completeTogle(${id}, 'green')">
         </span>
 
         <div class="card-body">
@@ -159,7 +163,12 @@ const showTogle = (id)=>{
     show.style.display = getAtr == "none" ? "contents" : "none"
 }
 
+const completeTogle = (id, color)=>{
+    const card = document.getElementById(`card-${id}`)
+    const cl = card.style.backgroundColor
+    card.style.backgroundColor = cl == color ? 'white' : color
 
+}
 
 //AUTO LOAD
 window.addEventListener('load', ()=>{

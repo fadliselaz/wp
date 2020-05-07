@@ -1,0 +1,17 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "noteapp untuk jvalley",
+  "main": "index.js",
+  "author": "fadliselaz",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel start public/index.html"
+  },
+  "dependencies": {
+    "easy-peasy": "^3.3.0",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

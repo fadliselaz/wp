@@ -17,9 +17,37 @@ const cardTemplate = (title, content, username, date)=>{
     </div>
     
     `
-
 }
 
-const mainContainer = document.getElementById('mainContainer')
+// const mainContainer = document.getElementById('mainContainer')
+// mainContainer.innerHTML = cardTemplate('Ini apps saya', 'ini content saya', 'today')
 
-mainContainer.innerHTML = cardTemplate('Ini Judul saya', 'ini content saya', 'today')
+const getData = ()=>{
+
+    //MENGAMBIL DATA DARI JSON SERVER
+    fetch('http://localhost:3000/note', {
+        mode : 'cors',
+        method : 'GET',
+        headers : {
+            "Content-Type" : "application/json"
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+
+        // MENAMPILKAN DATA DI CONSOLE BROWSER
+        console.log(data)
+
+        // MENDAPATKAN ELEMENT CONTAINER
+        const mainCon = document.getElementById('mainContainer') 
+
+        // MAPPING DATA YANG DIDAPATKAN
+        data.map( (e)=>{
+            // INNER HASIL DATA KE ELEMENT CONTAINER
+            mainCon.innerHTML += cardTemplate(e.title, e.content, e.username, e.date)
+        } )
+    })
+    .catch(err => console.log(err))
+}
+
+getData()
