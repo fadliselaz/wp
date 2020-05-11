@@ -55,12 +55,12 @@ const cardTemplate = (id, title, content, username, date, i)=>{
 // const mainContainer = document.getElementById('mainContainer')
 // mainContainer.innerHTML = cardTemplate('Ini apps saya', 'ini content saya', 'today')
 
-const getData = (keyWord = "")=>{
+const getData = ()=>{
     const spiner = document.querySelector('.spiner')
     spiner.style.display = 'flex'
 
     //MENGAMBIL DATA DARI JSON SERVER
-    fetch(`http://localhost:3000/note?q=${keyWord}`, {
+    fetch(`http://localhost:3000/note`, {
         mode : 'cors',
         method : 'GET',
         headers : {
@@ -116,6 +116,7 @@ const inputData = ()=>{
         .then(data => {
             if(data.length != 0){
                 alert('note berhasil di tambahkan..')
+                window.location.href = '/'
             }else{
                 alert('note gagal di tambahkan..')
             }

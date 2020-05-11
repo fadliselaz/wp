@@ -1,0 +1,60 @@
+{
+  "userData": [
+    {
+      "username": "fadliselaz",
+      "email": "fadliselaz@gmail.com",
+      "password": "1qaz2wsx",
+      "id": 1
+    },
+    {
+      "username": "dedi",
+      "email": "dedi@gmail.com",
+      "password": "1qaz2wsx",
+      "id": 2
+    },
+    {
+      "username": "agil",
+      "email": "agil@gmail.com",
+      "password": "1qaz2wsx",
+      "id": 3
+    },
+    {
+      "username": "evalia",
+      "email": "evalia@gmail.com",
+      "password": "xsw2zaq1",
+      "id": 4
+    },
+    {
+      "username": "fauzi",
+      "email": "fauzi@gmail.com",
+      "password": "edcrfv34",
+      "id": 5
+    },
+    {
+      "username": "fauzi",
+      "email": "fauzi@gmail.com",
+      "password": "edcrfv34",
+      "id": 6
+    },
+    {
+      "username": "fauzi",
+      "email": "fauzi@gmail.com",
+      "password": "edcrfv34",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "author": "fadliselaz",
+      "coment": "manteb mas..",
+      "member": true
+    },
+    {
+      "id": 2,
+      "author": "Dedi",
+      "coment": "cakep mas..",
+      "member": false
+    }
+  ]
+}
