@@ -15,7 +15,7 @@ const card = (title, content, id, dt, author)=>{
         </span>
 
         <span class="small greenButton btn btn-success btn-sm"
-            style="position: absolute; top: 5px; left: 5px; width: 15px; height: 15px; border-radius:20px;" onclick="completeTogle(${id}, 'green')">
+            style="position: absolute; top: 5px; left: 5px; width: 15px; height: 15px; border-radius:20px;" onclick="completeTogle(${id}, '#bdffc3')">
         </span>
 
         <div class="card-body">
@@ -166,7 +166,7 @@ const showTogle = (id)=>{
 const completeTogle = (id, color)=>{
     const card = document.getElementById(`card-${id}`)
     const cl = card.style.backgroundColor
-    card.style.backgroundColor = cl == color ? 'white' : color
+    card.style.backgroundColor = cl === color ? 'white' : `${color}`
 
 }
 

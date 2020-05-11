@@ -1,61 +1,11 @@
 {
   "note": [
     {
-      "id": 1,
-      "username": "<b class='text-info'>fadliselaz</b>",
-      "title": "tutorial 1",
-      "content": "Ini adalah tutorial 1",
-      "date": "13 Juli 2020"
-    },
-    {
-      "id": 2,
-      "username": "evalia",
+      "username": "selaz",
       "title": "tutorial 2",
       "content": "Ini adalah tutorial 2",
-      "date": "13 Juli 2020"
-    },
-    {
-      "id": 3,
-      "username": "dedi",
-      "title": "tutorial 3",
-      "content": "Ini adalah tutorial 3",
-      "date": "13 Juli 2020"
-    },
-    {
-      "id": 4,
-      "username": "boys",
-      "title": "tutorial 4",
-      "content": "Ini adalah tutorial 4",
-      "date": "13 Juli 2020"
-    },
-    {
-      "id": 5,
-      "username": "aly",
-      "title": "tutorial 5",
-      "content": "Ini adalah tutorial 5",
-      "date": "13 Juli 2022"
-    },
-    {
-      "id": 6,
-      "username": "hudan",
-      "title": "tutorial 6",
-      "content": "Ini adalah tutorial 6",
-      "date": "13 Juli 2022"
-    },
-    {
-      "username": "culuy",
-      "title": "tutorial 7",
-      "content": "Ini adalah tutorial 7",
-      "date": "13 Juli 2022",
-      "id": 7
-    },
-    {
-      "username": "irfan",
-      "title": "tutorial 8",
-      "content": "Ini adalah tutorial 8",
-      "date": "13 Juli 2022",
-      "profile_pic": "image.jpeg",
-      "id": 8
+      "date": "13 Juli 1987",
+      "id": 2
     }
   ]
 }

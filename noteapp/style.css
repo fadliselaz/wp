@@ -5,11 +5,19 @@ body{
     user-select: none;
 }
 
+.spiner{
+    position: fixed;
+    top: 50vh;
+    right: 50vw;
+    z-index: 20;
+}
+
 .modalTogle{
     position: fixed;
     bottom: 20px;
     right: 20px;
     font-size: 4rem;
+    z-index: 10 !important;
 }
 
 .mainContainer{
@@ -28,6 +36,9 @@ body{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.300);
     margin: 20px;
     transition-duration: .3s;
+    animation: anim1 .5s linear 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .card:hover{
@@ -35,3 +46,24 @@ body{
 
 }
 
+.deleteIcon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition-duration: .5s;
+}
+
+.deleteIcon:hover{
+    color: red !important;
+}
+
+@keyframes anim1{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
