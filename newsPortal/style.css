@@ -1,0 +1,123 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    user-select: none;
+    font-family: 'Lora', serif !important;
+}
+
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 160px;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 2rem;
+    color: orange !important;
+}
+
+.navbar-brand:hover{
+    color: rgb(214, 139, 0) !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.150) !important;
+}
+
+.newsArea{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 160px !important;
+    margin-top: 20vh;
+}
+
+.carousel{
+    height: 50vh !important;
+}
+
+.carousel-inner, .carousel-item{
+    height: 100% !important;
+    box-sizing: border-box;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.800);
+    padding: 20px;
+}
+
+.carousel-title{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.carousel-content{
+    color: white;
+    font: 'Lora', smaller;
+    font-size: 1rem;
+}
+
+.car-card{
+    /* display: flex !important; */
+    width: 100% !important;
+    height: 100% !important;
+
+}
+
+
+.carContainer{
+    width: 100%;
+    height: 100%;
+}
+.carContainer-left{
+    flex: 1;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/6053/man-hands-reading-boy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    margin-right: auto;
+}
+
+.carContainer-right{
+    /* width: 50% !important; */
+    flex: 1;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px !important;
+    box-sizing: border-box !important;
+    justify-content: center;
+    
+}
+
+.carContainer-right h3{
+    color: white;
+    font-family: 'Montserrat';
+
+}
+
+.carContainer-right p{
+    color: white;
+    font-size: .7rem;
+    line-height: 2;
+    width: 100% !important;
+    padding-right: 80px;
+    box-sizing: border-box !important;
+}
+
+.carContainer-right a{
+
+    text-decoration: none;
+    color: yellow;
+    font-size: .7rem;
+
+}
+
+
+
+
